@@ -1,0 +1,130 @@
+#page-client-form {
+  width: 100vw;
+  height: 100vh;
+}
+
+#page-client-form .page-header .header-content {
+  margin-bottom: 6.4rem;
+}
+
+#page-client-form main {
+  background: var(--color-box-base);
+  width: 100%;
+  max-width: 740px;
+  border-radius: 8px;
+  margin: -32px auto 32px;
+  padding-top: 64px;
+  overflow: hidden;
+}
+
+#page-client-form main fieldset {
+  border: 0;
+  padding: 0 24px;
+}
+
+#page-client-form main fieldset + fieldset {
+  margin-top: 64px;
+}
+
+#page-client-form main fieldset legend {
+  font: 700 24px Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-client-form main fieldset legend button {
+  background: none;
+  border: 0;
+  color: var(--color-primary);
+  font: 700 16px Archivo;
+  cursor: pointer;
+  transition: color 0.2s;
+  outline: none;
+}
+
+#page-client-form main fieldset legend button:hover {
+  color: var(--color-primary-dark);
+}
+
+#page-client-form main fieldset .input-block + .textarea-block,
+#page-client-form main fieldset .select-block + .input-block {
+  margin-top: 24px; 
+}
+
+#page-client-form main label {
+  color: var(--color-text-complement);
+}
+
+#page-client-form main footer {
+  padding: 40px 24px;
+  background: var(--color-box-footer);
+  border-top: 1px solid var(--color-line-in-white);
+  margin-top: 64px;
+}
+
+#page-client-form main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-text-complement);
+}
+
+#page-client-form main footer button {
+  width: 100%;
+  height: 56px;
+  background-color: var(--color-secondary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font: 700 16px Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 32px;
+}
+
+#page-client-form main footer button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+@media (min-width: 700px) {
+  #page-client-form {
+    max-width: 100vw;
+  }
+
+  #page-client-form .page-header .header-content {
+    margin-bottom: 0;
+  }
+
+  #page-client-form main fieldset {
+    padding: 0 64px;
+  }
+
+  #page-client-form main footer {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #page-client-form main footer p {
+    justify-content: space-between;
+  }
+
+  #page-client-form main footer button {
+    width: 200px;
+    margin-top: 0;
+  }
+}
+
