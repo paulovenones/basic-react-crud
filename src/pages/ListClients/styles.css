@@ -1,0 +1,66 @@
+#page-client-list {
+  width: 100vw;
+  height: 100vh;
+}
+
+#search-clients label {
+  color: var(--color-text-in-primary);
+}
+
+#search-clients button {
+  width: 100%;
+  height: 56px;
+  background-color: var(--color-secondary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font: 700 16px Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 46px;
+  outline: none;
+}
+
+#search-clients button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+#page-client-list main {
+  margin: 32px auto;
+  width: 90%;
+}
+.filter-block {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 720px;
+}
+
+@media (min-width: 700px) {
+  #page-client-list {
+    max-width: 100%;
+  }
+
+  #search-clients {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    bottom: -28px;
+  }
+
+  #search-clients .input-block + .input-block,
+  #search-clients .select-block + .select-block {
+    margin-top: 0;
+  }
+
+  #page-client-list main {
+    padding: 32px 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+}
